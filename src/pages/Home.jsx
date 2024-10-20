@@ -1,5 +1,6 @@
 import React from 'react';
 import { delay, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 // Animation variants for the typing effect
 const typingAnimation = {
@@ -41,9 +42,9 @@ const Home = () => {
         I’m <b>Raghib Jamil</b> a passionate full-stack developer focused on building clean and responsive web applications. Explore my projects and learn more about my journey.
       </p>
       
-      <a href="/projects" className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition">
+      <Link to="/projects" className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition">
         View My Projects
-      </a>
+      </Link>
     </div>
   );
 };
